@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.TreeMap;
 
 public class HomeWork {
 
@@ -58,20 +57,20 @@ public class HomeWork {
     }
 
     private static boolean isInArray(int[] array, int searchable) {
-        int upperBorder = array.length - 1;
-        int lowerBorder = 0;
-        int i = (upperBorder + lowerBorder) / 2;
-        while (i >= lowerBorder && i <= upperBorder) {
+        int upperBound = array.length - 1;
+        int lowerBound = 0;
+        int i = (upperBound + lowerBound) / 2;
+        while (i >= lowerBound && i <= upperBound) {
             if (searchable == array[i]) {
                 return true;
             } else {
                 if (searchable > array[i]) {
-                    lowerBorder = i + 1;
+                    lowerBound = i + 1;
                 } else {
-                    upperBorder = i - 1;
+                    upperBound = i - 1;
                 }
             }
-            i = (upperBorder + lowerBorder) / 2;
+            i = (upperBound + lowerBound) / 2;
         }
         return false;
     }

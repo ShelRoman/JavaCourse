@@ -8,7 +8,7 @@ public class HomeWork {
         Scanner scan = new Scanner(System.in);
 
 
-        // Task # 1
+        // Task 1
 //        System.out.println("Please input number from 2 to 9: ");
 //        int stepsAsterisks = scan.nextInt();
 //        printAsterisks(stepsAsterisks);
@@ -30,7 +30,7 @@ public class HomeWork {
 //        }
 
         //Task 5
-//        System.out.println("Please input to determine whether it even or odd: ");
+//        System.out.println("Please input number to determine whether it even or odd: ");
 //        int number = scan.nextInt();
 //        printOddOrEven(number);
 

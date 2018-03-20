@@ -9,49 +9,49 @@ public class HomeWork {
 
 
         // Task 1
-//        System.out.println("Please input number from 2 to 9: ");
-//        int stepsAsterisks = scan.nextInt();
-//        printAsterisks(stepsAsterisks);
-//
-//
+        System.out.println("Please input number from 2 to 9: ");
+        int stepsAsterisks = scan.nextInt();
+        printAsterisks(stepsAsterisks);
+
+
         //Task 2 & Task 4
-//        System.out.println("Please input amount of loops to test array sort and binary search: ");
-//        int loops = scan.nextInt();
-//        for (int i = 1; i <= loops; i++) { //Tasks # 2, 3
-//            int[] randomArray = new Random().ints(10, 1, 10).toArray();
-//            System.out.println("-----------Unsorted---------------");
-//            printArray(randomArray);
-//            bubbleSort(randomArray);
-//            System.out.println("-----------Sorted-----------------");
-//            printArray(randomArray);
-//            int searchable = (int) (9 * Math.random() + 1);
-//            System.out.println("Is searchable " + searchable + " is in array - " + isInArray(randomArray, searchable));
-//            System.out.println();
-//        }
+        System.out.println("Please input amount of loops to test array sort and binary search: ");
+        int loops = scan.nextInt();
+        for (int i = 1; i <= loops; i++) { //Tasks # 2, 3
+            int[] randomArray = new Random().ints(10, 1, 10).toArray();
+            System.out.println("-----------Unsorted---------------");
+            printArray(randomArray);
+            bubbleSort(randomArray);
+            System.out.println("-----------Sorted-----------------");
+            printArray(randomArray);
+            int searchable = (int) (9 * Math.random() + 1);
+            System.out.println("Is searchable " + searchable + " is in array - " + isInArray(randomArray, searchable));
+            System.out.println();
+        }
 
         //Task 5
-//        System.out.println("Please input number to determine whether it even or odd: ");
-//        int number = scan.nextInt();
-//        printOddOrEven(number);
+        System.out.println("Please input number to determine whether it even or odd: ");
+        int number = scan.nextInt();
+        printOddOrEven(number);
 
 
         //Task 6
-//        System.out.println("Please input number from 1 to 9 to have its string representation: ");
-//        int number = scan.nextInt();
-//        printStringOfNumber(number);
+        System.out.println("Please input number from 1 to 9 to have its string representation: ");
+        int number2 = scan.nextInt();
+        printStringOfNumber(number2);
 
 
         //Task 7
-//        printSumOfHundred();
+        printSumOfHundred();
 
 
         //Task 6(2)
-//        double customPI = calculateCustomPI();
-//        System.out.println(String.valueOf(customPI).substring(0,12).equals(String.valueOf(Math.PI).substring(0,12)));
+        double customPI = calculateCustomPI();
+        System.out.println(String.valueOf(customPI).substring(0,12).equals(String.valueOf(Math.PI).substring(0,12)));
 
 
         //Task 7(2)
-//        printSumOfSet();
+        printSumOfSet();
     }
 
     private static void printSumOfSet() {

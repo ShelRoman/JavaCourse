@@ -46,8 +46,20 @@ public class HomeWork {
 
 
         //Task 6(2)
-        double customPI = calculateCustomPI();
-        System.out.println(customPI + " " + Math.PI);
+//        double customPI = calculateCustomPI();
+//        System.out.println(String.valueOf(customPI).substring(0,12).equals(String.valueOf(Math.PI).substring(0,12)));
+
+
+        //Task 7(2)
+//        printSumOfSet();
+    }
+
+    private static void printSumOfSet() {
+        double result = 1;
+        for (int i = 2; i <= 50000; i++) {
+            result += 1.0 / i;
+        }
+        System.out.println(result);
     }
 
     private static double calculateCustomPI() {

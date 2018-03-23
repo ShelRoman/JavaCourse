@@ -1,20 +1,21 @@
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class HomeWork {
 
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-
+        //Module3
         // Task 1
         System.out.println("Please input number from 2 to 9: ");
         int stepsAsterisks = scan.nextInt();
         printAsterisks(stepsAsterisks);
 
 
-        //Task 2 & Task 4
+        //Task 2 & Task 3
         System.out.println("Please input amount of loops to test array sort and binary search: ");
         int loops = scan.nextInt();
         for (int i = 1; i <= loops; i++) { //Tasks # 2, 3
@@ -29,28 +30,28 @@ public class HomeWork {
             System.out.println();
         }
 
-        //Task 5
+        //Task 4
         System.out.println("Please input number to determine whether it even or odd: ");
         int number = scan.nextInt();
         printOddOrEven(number);
 
 
-        //Task 6
+        //Task 5
         System.out.println("Please input number from 1 to 9 to have its string representation: ");
         int number2 = scan.nextInt();
         printStringOfNumber(number2);
 
-
-        //Task 7
+        //Module 4
+        //Task 1
         printSumOfHundred();
 
 
-        //Task 6(2)
+        //Task 2
         double customPI = calculateCustomPI();
         System.out.println(String.valueOf(customPI).substring(0,12).equals(String.valueOf(Math.PI).substring(0,12)));
 
 
-        //Task 7(2)
+        //Task 3
         printSumOfSet();
     }
 

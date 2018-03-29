@@ -10,49 +10,51 @@ public class HomeWork {
 
         //Module3
         // Task 1
-        System.out.println("Please input number from 2 to 9: ");
+        System.out.println("Please input any positive integer: ");
         int stepsAsterisks = scan.nextInt();
-        printAsterisks(stepsAsterisks);
+        printAsterisks2(stepsAsterisks);
+//
+//
+//        //Task 2 & Task 3
+//        System.out.println("Please input amount of loops to test array sort and binary search: ");
+//        int loops = scan.nextInt();
+//        for (int i = 1; i <= loops; i++) { //Tasks # 2, 3
+//            int[] randomArray = new Random().ints(10, 1, 10).toArray();
+//            System.out.println("-----------Unsorted---------------");
+//            printArray(randomArray);
+//            bubbleSort(randomArray);
+//            System.out.println("-----------Sorted-----------------");
+//            printArray(randomArray);
+//            int searchable = (int) (9 * Math.random() + 1);
+//            System.out.println("Is searchable " + searchable + " is in array - " + isInArray(randomArray, searchable));
+//            System.out.println();
+//        }
+//
+//        //Task 4
+//        System.out.println("Please input number to determine whether it even or odd: ");
+//        int number = scan.nextInt();
+//        printOddOrEven(number);
+//
+//
+//        //Task 5
+//        System.out.println("Please input number from 1 to 9 to have its string representation: ");
+//        int number2 = scan.nextInt();
+//        printStringOfNumber(number2);
+//
+//        //Module 4
+//        //Task 1
+//        printSumOfHundred();
+//
 
-
-        //Task 2 & Task 3
-        System.out.println("Please input amount of loops to test array sort and binary search: ");
-        int loops = scan.nextInt();
-        for (int i = 1; i <= loops; i++) { //Tasks # 2, 3
-            int[] randomArray = new Random().ints(10, 1, 10).toArray();
-            System.out.println("-----------Unsorted---------------");
-            printArray(randomArray);
-            bubbleSort(randomArray);
-            System.out.println("-----------Sorted-----------------");
-            printArray(randomArray);
-            int searchable = (int) (9 * Math.random() + 1);
-            System.out.println("Is searchable " + searchable + " is in array - " + isInArray(randomArray, searchable));
-            System.out.println();
-        }
-
-        //Task 4
-        System.out.println("Please input number to determine whether it even or odd: ");
-        int number = scan.nextInt();
-        printOddOrEven(number);
-
-
-        //Task 5
-        System.out.println("Please input number from 1 to 9 to have its string representation: ");
-        int number2 = scan.nextInt();
-        printStringOfNumber(number2);
-
-        //Module 4
-        //Task 1
-        printSumOfHundred();
-
-
-        //Task 2
-        double customPI = calculateCustomPI();
-        System.out.println(String.valueOf(customPI).substring(0,12).equals(String.valueOf(Math.PI).substring(0,12)));
+//        //Task 2
+//        double customPI = calculateCustomPI();
+//        System.out.println(String.valueOf(customPI).substring(0,12));
+//        System.out.println(String.valueOf(Math.PI).substring(0,12));
+//
 
 
         //Task 3
-        printSumOfSet();
+//        printSumOfSet();
     }
 
     private static void printSumOfSet() {
@@ -87,7 +89,7 @@ public class HomeWork {
 
     private static void printStringOfNumber(int number) {
         if (number > 0 && number < 10) {
-            String[] values = {"One", "Two", "Three", "Four", "Fife", "Six", "Seven", "Eight", "Nine"};
+            String[] values = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
             System.out.println(values[number - 1]);
         } else {
             System.out.println("Number is out of range");
@@ -115,6 +117,25 @@ public class HomeWork {
         }
     }
 
+    private static void printAsterisks2(int steps) {
+        for (int i = 1; i <= steps; i++) {
+            for (int j = 1; j <= steps; j++) {
+                if (j <= i) {
+                    System.out.print(j);
+                } else {
+                    printAsterisksLine(j);
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    private static void printAsterisksLine(int value) {
+        for (int i = 1; i <= Integer.toString(value).length(); i++) {
+            System.out.print("*");
+        }
+    }
+
     private static void printArray(int[] array) {
         if (array.length > 1) {
             System.out.print("|");
@@ -122,7 +143,7 @@ public class HomeWork {
         for (int elem : array) {
             System.out.print(elem + "|");
         }
-        System.out.println("");
+        System.out.println();
     }
 
     private static void bubbleSort(int[] array) {
@@ -130,11 +151,10 @@ public class HomeWork {
         while (runWhile) {
             int changesCount = 0;
             for (int i = 0; i < array.length - 1; i++) {
-                int currValue = array[i];
-                int nextValue = array[i + 1];
-                if (currValue > nextValue) {
-                    array[i] = nextValue;
-                    array[i + 1] = currValue;
+                if (array[i] > array[i + 1]) {
+                    int temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
                     changesCount++;
                 }
             }

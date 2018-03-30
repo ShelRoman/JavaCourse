@@ -9,26 +9,26 @@ public class HomeWork {
         Scanner scan = new Scanner(System.in);
 
         //Module3
-        // Task 1
+//        // Task 1
         System.out.println("Please input any positive integer: ");
         int stepsAsterisks = scan.nextInt();
         printAsterisks2(stepsAsterisks);
-//
-//
+
+
 //        //Task 2 & Task 3
-//        System.out.println("Please input amount of loops to test array sort and binary search: ");
-//        int loops = scan.nextInt();
-//        for (int i = 1; i <= loops; i++) { //Tasks # 2, 3
-//            int[] randomArray = new Random().ints(10, 1, 10).toArray();
-//            System.out.println("-----------Unsorted---------------");
-//            printArray(randomArray);
-//            bubbleSort(randomArray);
-//            System.out.println("-----------Sorted-----------------");
-//            printArray(randomArray);
-//            int searchable = (int) (9 * Math.random() + 1);
-//            System.out.println("Is searchable " + searchable + " is in array - " + isInArray(randomArray, searchable));
-//            System.out.println();
-//        }
+        System.out.println("Please input amount of loops to test array sort and binary search: ");
+        int loops = scan.nextInt();
+        for (int i = 1; i <= loops; i++) { //Tasks # 2, 3
+            int[] randomArray = new Random().ints(10, 1, 10).toArray();
+            System.out.println("-----------Unsorted---------------");
+            printArray(randomArray);
+            bubbleSort(randomArray);
+            System.out.println("-----------Sorted-----------------");
+            printArray(randomArray);
+            int searchable = (int) (9 * Math.random() + 1);
+            System.out.println("Is searchable " + searchable + " is in array - " + isInArray(randomArray, searchable));
+            System.out.println();
+        }
 //
 //        //Task 4
 //        System.out.println("Please input number to determine whether it even or odd: ");

@@ -1,5 +1,7 @@
 package HomeWork.BinaryTree;
 
+import javax.xml.stream.FactoryConfigurationError;
+
 public class BinaryTree {
     private Node root;
 
@@ -36,10 +38,22 @@ public class BinaryTree {
             } else if (value < comparable.value) {
                 add(value, comparable, comparable.left);
             } else {
-                System.out.println("Value is already in a tree");
+                System.out.println("Value - " + value + " is already in a tree");
             }
         }
     }
+
+    public boolean isInTree(Node cursor, int value) {
+        if (cursor != null) {
+            if (cursor.getValue() == value) {
+                return true;
+            } else {
+                return isInTree(cursor.getLeft(), value) || isInTree(cursor.getRight(), value);
+            }
+        }
+        return false;
+    }
+
 
     public void printTree() {
         this.printNode(this.root);
@@ -61,6 +75,9 @@ public class BinaryTree {
 
     public class Node {
         private Node left;
+        private Node right;
+        private int value;
+
 
         public Node getLeft() {
             return left;
@@ -78,8 +95,6 @@ public class BinaryTree {
             this.right = right;
         }
 
-        private Node right;
-        private int value;
 
         private Node(int value) {
             this.value = value;

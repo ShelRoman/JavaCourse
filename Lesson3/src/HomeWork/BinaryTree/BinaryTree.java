@@ -1,7 +1,5 @@
 package HomeWork.BinaryTree;
 
-import javax.xml.stream.FactoryConfigurationError;
-
 public class BinaryTree {
     private Node root;
 

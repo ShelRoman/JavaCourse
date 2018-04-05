@@ -3,7 +3,7 @@
 public class EQSolver {
 
     public static void main(String[] args) {
-//        double a = 0;
+//        double a = 0;t
 
         // case 1
         double a = 1;

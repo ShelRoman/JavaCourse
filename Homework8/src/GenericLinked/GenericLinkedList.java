@@ -1,3 +1,5 @@
+package GenericLinked;
+
 class GenericLinkedList<T> {
     private Node<T> tail;
     private int nodeCount = -1;

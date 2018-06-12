@@ -1,3 +1,5 @@
+package Zipper;
+
 class Zipper {
 
     static String zipString(String toZip) {

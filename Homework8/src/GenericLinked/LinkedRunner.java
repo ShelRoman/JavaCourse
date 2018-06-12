@@ -1,3 +1,5 @@
+package GenericLinked;
+
 public class LinkedRunner {
 
     public static void main(String[] args) {

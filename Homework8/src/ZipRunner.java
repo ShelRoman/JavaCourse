@@ -1,7 +1,13 @@
 public class ZipRunner {
 
     public static void main(String[] args) {
-        String res = Zipper.zipString("He4lo");
-        System.out.println(res);
+        String[] testCases = {"hellowoooorld", "He4lo", "heloooooooooo", "helooooooooooo"};
+
+        for (String case_ : testCases) {
+            String zipped = Zipper.zipString(case_);
+            System.out.println("Case is " + case_ + " zipped - " + zipped + "; Unzipped - " + Zipper.unzipString(zipped));
+        }
+
+
     }
 }

@@ -26,7 +26,6 @@ class Passport {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(series, id);
     }
 

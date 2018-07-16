@@ -3,7 +3,7 @@ package Zipper;
 public class ZipRunner {
 
     public static void main(String[] args) {
-        String[] testCases = {"hellowoooorld", "He4lo", "heloooooooooo", "helooooooooooo"};
+        String[] testCases = {"hellowoooorld", "He4lo", "helooooooooo", "helooooooooooo","abc5abc5"};
 
         for (String case_ : testCases) {
             String zipped = Zipper.zipString(case_);
